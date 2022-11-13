@@ -1,0 +1,70 @@
+@use "reset";
+
+// 共通style
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.site_title {
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  a {
+    color: #24292e;
+    display: block;
+  }
+}
+
+// header
+#header {
+  // background: rgb(236, 223, 223);
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+  ul {
+    display: flex;
+    padding: 10px 0;
+    li {
+      font-size: 0.9rem;
+      margin-left: 30px;
+      transition: all 0.3s;
+      a {
+        color: #24292e;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      .icon {
+        width: 20px;
+        position: relative;
+        top:-5px;
+      }
+    }
+  }
+}
